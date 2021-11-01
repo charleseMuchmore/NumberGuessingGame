@@ -7,6 +7,7 @@ def determine_num_attempts(difficulty_level):
         return 5
     else:
         print(f"I'm sorry, but '{difficulty_level}' is not a valid input.")
+        return 0
 def greet_user():
     """Simply prints a greeting for the game"""
     print("Welcome to the Number Guessing Game!")
@@ -36,4 +37,5 @@ def logic_guess(guess, number, rangee):
     elif int(guess) == number:
         print(f"Congratulations, the number was {number}! You've won!")
         return 'win'
+
 
